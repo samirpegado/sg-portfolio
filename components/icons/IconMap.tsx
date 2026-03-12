@@ -1,0 +1,50 @@
+// Mapeamento dos ícones Remixicon para React Icons
+import { 
+  FaArrowRight, 
+  FaArrowUpRightFromSquare, 
+  FaAward, 
+  FaXmark, 
+  FaDesktop, 
+  FaMoon, 
+  FaDownload, 
+  FaFacebookF, 
+  FaGithub, 
+  FaInstagram, 
+  FaLinkedinIn, 
+  FaEnvelope, 
+  FaLocationDot, 
+  FaBars, 
+  FaPhone, 
+  FaGear, 
+  FaShapes, 
+  FaSkype, 
+  FaStar, 
+  FaSun, 
+  FaXTwitter
+} from 'react-icons/fa6';
+
+export const IconMap = {
+  'ri-arrow-right-line': FaArrowRight,
+  'ri-arrow-right-up-line': FaArrowUpRightFromSquare,
+  'ri-award-line': FaAward,
+  'ri-close-line': FaXmark,
+  'ri-computer-line': FaDesktop,
+  'ri-contrast-2-line': FaMoon,
+  'ri-download-line': FaDownload,
+  'ri-facebook-circle-fill': FaFacebookF,
+  'ri-github-fill': FaGithub,
+  'ri-instagram-fill': FaInstagram,
+  'ri-linkedin-fill': FaLinkedinIn,
+  'ri-mail-fill': FaEnvelope,
+  'ri-map-2-fill': FaLocationDot,
+  'ri-menu-2-line': FaBars,
+  'ri-phone-fill': FaPhone,
+  'ri-service-line': FaGear,
+  'ri-shape-line': FaShapes,
+  'ri-skype-fill': FaSkype,
+  'ri-star-fill': FaStar,
+  'ri-sun-line': FaSun,
+  'ri-twitter-x-fill': FaXTwitter,
+};
+
+export type IconName = keyof typeof IconMap;

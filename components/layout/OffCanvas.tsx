@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { Icon } from '@/components/icons/Icon'
 
 export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
 	const { t } = useLanguage();
@@ -9,7 +10,7 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
 			{/* offCanvas-menu */}
 			<div className={`offCanvas__info ${isOffCanvas ? 'active' : ''}`}>
 				<div className="offCanvas__close-icon menu-close" onClick={handleOffCanvas}>
-					<button><i className="ri-close-line" /></button>
+					<button><Icon name="ri-close-line" /></button>
 				</div>
 				<div className="offCanvas__logo mb-5">
 					<h3 className="mb-0">{t('offcanvas.getInTouch')}</h3>
@@ -30,14 +31,14 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
 					<div className="contact-list">
 						<p className="text-400 fs-5 mb-2">{t('offcanvas.social')}</p>
 						<div className="d-md-flex d-none gap-3">
-							<Link href="/https://www.instagram.com/samirpegado/">
-								<i className="ri-instagram-fill fs-5" />
+							<Link href="https://www.instagram.com/samirpegado/" target="_blank">
+								<Icon name="ri-instagram-fill" className="fs-5" />
 							</Link>
-							<Link href="/https://www.linkedin.com/in/samir-pegado">
-								<i className="ri-linkedin-fill fs-18" />
+							<Link href="https://www.linkedin.com/in/samir-pegado" target="_blank">
+								<Icon name="ri-linkedin-fill" className="fs-18" />
 							</Link>
-							<Link href="/https://github.com/samirpegado">
-								<i className="ri-github-fill fs-18" />
+							<Link href="https://github.com/samirpegado" target="_blank">
+								<Icon name="ri-github-fill" className="fs-18" />
 							</Link>
 						</div>
 					</div>

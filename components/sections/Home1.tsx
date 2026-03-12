@@ -1,5 +1,6 @@
 
 import Link from "next/link"
+import { Icon } from '@/components/icons/Icon'
 
 export default function Home1() {
 	return (
@@ -14,11 +15,11 @@ export default function Home1() {
 							<p className="text-300 mb-6">I assist individuals and brands in achieving their objectives by creating and developing user-focused digital products and interactive experiences.</p>
 							<Link href="/assets/resume.pdf" className="btn btn-gradient me-2" target="_blank">
 								Download CV
-								<i className="ri-download-line ms-2" />
+								<Icon name="ri-download-line" className="ms-2" />
 							</Link>
 							<Link href="/#contact" className="btn btn-outline-secondary d-inline-flex align-items-center">
 								<span>Hire me</span>
-								<i className="ri-arrow-right-line ms-2" />
+								<Icon name="ri-arrow-right-line" className="ms-2" />
 							</Link>
 							<p className="text-400 mt-6 mb-3">+ 12 years with professional design software</p>
 							<div className="d-flex gap-3">

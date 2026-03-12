@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import Link from 'next/link'
 import OffCanvas from '../OffCanvas'
 import MobileMenu from '../MobileMenu'
+import { Icon } from '@/components/icons/Icon'
 
 export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCanvas, handleOffCanvas }:any) {
     const { t } = useLanguage();
@@ -15,7 +16,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 					<div className="position-relative">
 						<nav className="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
 							<a className="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info" onClick={handleOffCanvas}>
-								<i className="ri-menu-2-line" />
+								<Icon name="ri-menu-2-line" />
 							</a>
 							<div className="container py-3 px-4 d-flex align-items-center justify-content-between">
 								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">

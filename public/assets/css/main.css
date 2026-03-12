@@ -3890,7 +3890,9 @@ textarea.form-control {
 }
 
 .button-project .ellipse {
-  background-image: url(../imgs/projects/projects-1/elipse.png);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  width: 300px;
+  height: 150px;
 }
 
 .fillter-project {

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Icon } from '@/components/icons/Icon';
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -58,11 +59,11 @@ export default function Testimonials1() {
 													<img src="/assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
 												</div>
 												<div className="d-flex mb-5">
-													<i className="ri-star-fill fs-7 text-primary-1" />
-													<i className="ri-star-fill fs-7 text-primary-1" />
-													<i className="ri-star-fill fs-7 text-primary-1" />
-													<i className="ri-star-fill fs-7 text-primary-1" />
-													<i className="ri-star-fill fs-7 text-500 " />
+													<Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+													<Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+													<Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+													<Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+													<Icon name="ri-star-fill" className="fs-7 text-500 " />
 												</div>
 												<h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
 												<Link href="#" className="d-flex align-items-center">
@@ -90,11 +91,11 @@ export default function Testimonials1() {
                                                     <img src="/assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
                                                 </div>
                                                 <div className="d-flex mb-5">
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-500 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-500 text-primary-1" />
                                                 </div>
                                                 <h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
                                                 <Link href="/#text-primary-1" className="d-flex align-items-center">
@@ -124,11 +125,11 @@ export default function Testimonials1() {
                                                     <img src="/assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
                                                 </div>
                                                 <div className="d-flex mb-5">
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-500 " />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-500 " />
                                                 </div>
                                                 <h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
                                                 <Link href="#" className="d-flex align-items-center">
@@ -158,11 +159,11 @@ export default function Testimonials1() {
                                                     <img src="/assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
                                                 </div>
                                                 <div className="d-flex mb-5">
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-500 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-500 text-primary-1" />
                                                 </div>
                                                 <h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
                                                 <Link href="/#text-primary-1" className="d-flex align-items-center">
@@ -192,11 +193,11 @@ export default function Testimonials1() {
                                                     <img src="/assets/imgs/testimonials/testimonials-1/logo-1.png" alt="logo" />
                                                 </div>
                                                 <div className="d-flex mb-5">
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-500 " />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-500 " />
                                                 </div>
                                                 <h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
                                                 <Link href="#" className="d-flex align-items-center">
@@ -226,11 +227,11 @@ export default function Testimonials1() {
                                                     <img src="/assets/imgs/testimonials/testimonials-1/logo-2.png" alt="logo" />
                                                 </div>
                                                 <div className="d-flex mb-5">
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-primary-1" />
-                                                    <i className="ri-star-fill fs-7 text-500 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-primary-1" />
+                                                    <Icon name="ri-star-fill" className="fs-7 text-500 text-primary-1" />
                                                 </div>
                                                 <h6 className="mb-7">“Working with William was an absolute pleasure. His attention to detail and user-focused design approach significantly improved our product's usability”</h6>
                                                 <Link href="/#text-primary-1" className="d-flex align-items-center">

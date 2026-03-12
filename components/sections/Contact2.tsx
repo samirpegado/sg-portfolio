@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useState } from 'react'
+import { Icon } from '@/components/icons/Icon'
 
 export default function Contact2() {
 	const { t } = useLanguage();
@@ -170,7 +171,7 @@ ${formData.message}
 													disabled={isSubmitting}
 												>
 													{isSubmitting ? t('contact.sending') : t('contact.sendMessage')}
-													<i className="ri-arrow-right-up-line" />
+													<Icon name="ri-arrow-right-up-line" className="ms-2" />
 												</button>
 											</div>
 										</div>
@@ -183,7 +184,7 @@ ${formData.message}
 							<div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
 								<div className="d-inline-block">
 									<div className="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
-										<i className="ri-phone-fill text-primary-2 fs-26" />
+										<Icon name="ri-phone-fill" className="text-primary-2 fs-26" />
 									</div>
 								</div>
 								<div className="ps-3 h-100">
@@ -195,7 +196,7 @@ ${formData.message}
 							<div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
 								<div className="d-inline-block">
 									<div className="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
-										<i className="ri-mail-fill text-primary-2 fs-26" />
+										<Icon name="ri-mail-fill" className="text-primary-2 fs-26" />
 									</div>
 								</div>
 								<div className="ps-3 h-100">
@@ -204,17 +205,22 @@ ${formData.message}
 								</div>
 								<a href="mailto:someone@example.com" className="position-absolute top-0 start-0 w-100 h-100" />
 							</div>
-							<div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
-								<div className="d-inline-block">
-									<div className="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
-										<i className="ri-linkedin-fill text-primary-2 fs-26" />
-									</div>
+						
+							
+							{/* Redes Sociais */}
+							<div className="mt-4">
+								<span className="text-400 fs-6 mb-3 d-block">{t('contact.socialMedia')}</span>
+								<div className="d-flex gap-3">
+									<a href="https://www.instagram.com/samirpegado/" target="_blank" className="icon-shape icon-md rounded-circle bg-3 border d-flex align-items-center justify-content-center">
+										<Icon name="ri-instagram-fill" className="text-primary-2" />
+									</a>
+									<a href="https://www.linkedin.com/in/samir-pegado" target="_blank" className="icon-shape icon-md rounded-circle bg-3 border d-flex align-items-center justify-content-center">
+										<Icon name="ri-linkedin-fill" className="text-primary-2" />
+									</a>
+									<a href="https://github.com/samirpegado" target="_blank" className="icon-shape icon-md rounded-circle bg-3 border d-flex align-items-center justify-content-center">
+										<Icon name="ri-github-fill" className="text-primary-2" />
+									</a>
 								</div>
-								<div className="ps-3 h-100">
-									<span className="text-400 fs-6">{t('contact.linkedin')}</span>
-									<h6 className="mb-0">Samir Gomes</h6>
-								</div>
-								<a href="https://www.linkedin.com/in/samir-pegado" className="position-absolute top-0 start-0 w-100 h-100" />
 							</div>
 						</div>
 					</div>

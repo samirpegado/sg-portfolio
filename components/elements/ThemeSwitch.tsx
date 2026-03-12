@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
+import { Icon } from '@/components/icons/Icon'
 
 export default function ThemeSwitch() {
 	const [theme, setTheme] = useState<string>("dark")
@@ -28,7 +29,10 @@ export default function ThemeSwitch() {
 				onClick={toggleTheme}
 				style={{ cursor: "pointer" }}
 			>
-				<i className={`bi theme-icon ${theme === "dark" ? "ri-sun-line text-warning" : "ri-contrast-2-line text-white"}`} />
+				<Icon 
+					name={theme === "dark" ? "ri-sun-line" : "ri-contrast-2-line"} 
+					className={theme === "dark" ? "text-warning" : "text-white"} 
+				/>
 			</div>
 
 			

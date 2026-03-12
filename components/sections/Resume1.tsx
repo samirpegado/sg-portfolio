@@ -1,5 +1,6 @@
 
 import Link from "next/link"
+import { Icon } from '@/components/icons/Icon';
 
 export default function Resume1() {
 	return (
@@ -19,7 +20,7 @@ export default function Resume1() {
 						<div className="col-lg-auto">
 							<Link href="/#contact" className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
 								Get in touch
-								<i className="ri-arrow-right-up-line" />
+								<Icon name="ri-arrow-right-up-line" />
 							</Link>
 						</div>
 					</div>

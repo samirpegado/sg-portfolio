@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Icon } from '@/components/icons/Icon';
 
 export default function Service1() {
     return (
@@ -17,7 +18,7 @@ export default function Service1() {
                         <div className="col-lg-auto">
                             <Link href="/#contact" className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
                                 Get a Quote
-                                <i className="ri-arrow-right-up-line" />
+                                <Icon name="ri-arrow-right-up-line" className="ms-2" />
                             </Link>
                         </div>
                     </div>
@@ -37,7 +38,7 @@ export default function Service1() {
                                             and mobile applications.
                                         </p>
                                         <div className="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
-                                            <i className="ri-arrow-right-up-line" />
+                                            <Icon name="ri-arrow-right-up-line" />
                                         </div>
                                     </Link>
                                 </div>
@@ -58,7 +59,7 @@ export default function Service1() {
                                             iOS and Android platforms.
                                         </p>
                                         <div className="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
-                                            <i className="ri-arrow-right-up-line" />
+                                            <Icon name="ri-arrow-right-up-line" />
                                         </div>
                                     </Link>
                                 </div>
@@ -79,7 +80,7 @@ export default function Service1() {
                                             target audience.
                                         </p>
                                         <div className="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
-                                            <i className="ri-arrow-right-up-line" />
+                                            <Icon name="ri-arrow-right-up-line" />
                                         </div>
                                     </Link>
                                 </div>
@@ -100,7 +101,7 @@ export default function Service1() {
                                             brand and business goals.
                                         </p>
                                         <div className="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
-                                            <i className="ri-arrow-right-up-line" />
+                                            <Icon name="ri-arrow-right-up-line" />
                                         </div>
                                     </Link>
                                 </div>

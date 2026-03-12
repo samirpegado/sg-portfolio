@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { Icon } from '@/components/icons/Icon'
 
 export default function Home2() {
 	const { t } = useLanguage();
@@ -88,7 +89,7 @@ export default function Home2() {
 										</div>
 
 										<Link href="https://flowcv.com/resume/pfcssto0ks" className="btn me-2 text-300 ps-0 mt-4" target="_blank">
-											<i className="ri-download-line text-primary-2" />
+											<Icon name="ri-download-line" className="text-primary-2 me-2" />
 											{t('hero.downloadCV')}
 										</Link>
 

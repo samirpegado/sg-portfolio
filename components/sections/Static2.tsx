@@ -1,6 +1,7 @@
 
 'use client'
 import CountUp from 'react-countup'
+import { Icon } from '@/components/icons/Icon';
 export default function Static2() {
 	return (
 		<>
@@ -13,7 +14,7 @@ export default function Static2() {
 								<div className="col-lg-auto col-md-6 text-center text-lg-start">
 									<div className="counter-item-cover counter-item">
 										<div className="content mx-auto">
-											<i className="ri-shape-line text-primary-2" />
+											<Icon name="ri-shape-line" className="text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
 												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={2} />
 												<span className="fs-50 text-300 mb-0">+</span>
@@ -25,7 +26,7 @@ export default function Static2() {
 								<div className="col-lg-auto col-md-6 text-center text-lg-start">
 									<div className="counter-item-cover counter-item">
 										<div className="content mx-auto">
-											<i className="ri-computer-line text-primary-2" />
+											<Icon name="ri-computer-line" className="text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
 												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={20} />
 												<span className="fs-50 text-300 mb-0">+</span>
@@ -37,7 +38,7 @@ export default function Static2() {
 								<div className="col-lg-auto col-md-6 text-center text-lg-start">
 									<div className="counter-item-cover counter-item">
 										<div className="content mx-auto">
-											<i className="ri-service-line text-primary-2" />
+											<Icon name="ri-service-line" className="text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
 												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={680} />
 												<span className="fs-50 text-300 mb-0">+</span>
@@ -49,7 +50,7 @@ export default function Static2() {
 								<div className="col-lg-auto col-md-6 text-center text-lg-start">
 									<div className="counter-item-cover counter-item">
 										<div className="content mx-auto">
-											<i className="ri-award-line text-primary-2" />
+											<Icon name="ri-award-line" className="text-primary-2" />
 											<h2 className="text-300 my-0 fs-50">
 												<CountUp className="odometer text-dark fw-medium" enableScrollSpy={true} end={18} />
 												<span className="fs-50 text-300 mb-0">+</span>
