@@ -20,12 +20,14 @@ import {
   FaSkype, 
   FaStar, 
   FaSun, 
-  FaXTwitter
+  FaXTwitter,
+  FaArrowUp
 } from 'react-icons/fa6';
 
 export const IconMap = {
   'ri-arrow-right-line': FaArrowRight,
   'ri-arrow-right-up-line': FaArrowUpRightFromSquare,
+  'ri-arrow-up-line': FaArrowUp,
   'ri-award-line': FaAward,
   'ri-close-line': FaXmark,
   'ri-computer-line': FaDesktop,

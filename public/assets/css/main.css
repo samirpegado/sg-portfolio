@@ -910,23 +910,6 @@ img {
   transition: all 0.2s linear, margin-right 0s;
   background-color: #6e4ef2;
 }
-.btn-scroll-top:after {
-  position: absolute;
-  font-family: "remixicon";
-  content: "\ea76";
-  text-align: center;
-  line-height: 3rem;
-  font-size: 1.5rem;
-  color: #ffffff;
-  left: 0;
-  top: 0;
-  height: 3rem;
-  width: 3rem;
-  cursor: pointer;
-  display: block;
-  z-index: 1;
-  transition: all 0.2s linear;
-}
 .btn-scroll-top.active-progress {
   visibility: visible;
   transform: translateY(0);
@@ -948,17 +931,11 @@ img {
 .btn-scroll-top.style-btn-2 {
   background-color: #ffffff;
 }
-.btn-scroll-top.style-btn-2:after {
-  color: #62a92b;
-}
 .btn-scroll-top.style-btn-2 svg.progress-square path {
   stroke: #62a92b;
 }
 .btn-scroll-top.style-btn-3 {
   background-color: #ffffff;
-}
-.btn-scroll-top.style-btn-3:after {
-  color: #be6895;
 }
 .btn-scroll-top.style-btn-3 svg.progress-square path {
   stroke: #be6895;

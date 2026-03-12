@@ -129,7 +129,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             {footerStyle == 2 ? <Footer2 /> : null}
             {footerStyle == 3 ? <Footer3 /> : null}
 
-            <BackToTop target="#top" />
+            <BackToTop />
         </>
     );
 }

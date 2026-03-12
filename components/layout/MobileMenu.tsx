@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { handleNavClick } from '@/utils/navigation'
 
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 	const { t } = useLanguage();
@@ -28,19 +29,19 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 								<nav>
 									<ul className="mobile-menu font-heading ps-0">
 										<li className="nav-item">
-											<Link className="nav-link" href="#about" onClick={handleMobileMenu}>{t('nav.about')}</Link>
+											<a className="nav-link" href="#about" onClick={(e) => { handleNavClick(e, '#about'); handleMobileMenu(); }}>{t('nav.about')}</a>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" href="#services" onClick={handleMobileMenu}>{t('nav.services')}</Link>
+											<a className="nav-link" href="#services" onClick={(e) => { handleNavClick(e, '#services'); handleMobileMenu(); }}>{t('nav.services')}</a>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" href="#experience" onClick={handleMobileMenu}>{t('nav.resume')}</Link>
+											<a className="nav-link" href="#experience" onClick={(e) => { handleNavClick(e, '#experience'); handleMobileMenu(); }}>{t('nav.resume')}</a>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" href="#portfolio" onClick={handleMobileMenu}>{t('nav.portfolio')}</Link>
+											<a className="nav-link" href="#portfolio" onClick={(e) => { handleNavClick(e, '#portfolio'); handleMobileMenu(); }}>{t('nav.portfolio')}</a>
 										</li>
 										<li className="nav-item">
-											<Link className="nav-link" href="#contact" onClick={handleMobileMenu}>{t('nav.contact')}</Link>
+											<a className="nav-link" href="#contact" onClick={(e) => { handleNavClick(e, '#contact'); handleMobileMenu(); }}>{t('nav.contact')}</a>
 										</li>
 									</ul>
 								</nav>

@@ -1,16 +1,14 @@
 'use client'
 import { useEffect, useState } from "react"
+import { scrollToSection } from '@/utils/navigation'
 
-interface BackToTopProps {
-	target: string // should be a valid CSS selector
-}
-
-export default function BackToTop({ target }: BackToTopProps) {
+export default function BackToTop() {
 	const [hasScrolled, setHasScrolled] = useState(false)
 
 	useEffect(() => {
 		const onScroll = () => {
-			setHasScrolled(window.scrollY > 100)
+			const scrolled = window.scrollY > 100
+			setHasScrolled(scrolled)
 		}
 
 		window.addEventListener("scroll", onScroll)
@@ -18,26 +16,47 @@ export default function BackToTop({ target }: BackToTopProps) {
 	}, [])
 
 	const handleClick = () => {
-		const targetElement = document.querySelector(target) as HTMLElement | null
-		if (targetElement) {
-			window.scrollTo({
-				top: targetElement.offsetTop,
-				behavior: 'smooth',
-			})
-		} else {
-			console.error(`Element with target '${target}' not found`)
-		}
+		scrollToSection('about')
 	}
 
+	if (!hasScrolled) return null
+
 	return (
-		<>
-			{hasScrolled && (
-				<div className="btn-scroll-top active-progress" onClick={handleClick}>
-					<svg className="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
-						<path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
-					</svg>
-				</div>
-			)}
-		</>
+		<div 
+			onClick={handleClick} 
+			style={{ 
+				position: 'fixed',
+				right: '1.5rem',
+				bottom: '1.5rem',
+				width: '3rem',
+				height: '3rem',
+				cursor: 'pointer',
+				zIndex: 1010,
+				opacity: 1,
+				visibility: 'visible',
+				transition: 'all 0.2s linear'
+			}}
+		>
+			<svg 
+				width="100%" 
+				height="100%" 
+				viewBox="0 0 512 512" 
+				style={{
+					filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
+				}}
+			>
+				<g>
+					<g>
+						<path 
+							d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M377.749,313.749
+							c-4.16,4.16-9.621,6.251-15.083,6.251c-5.462,0-10.923-2.091-15.083-6.251L256,222.165l-91.584,91.584
+							c-8.341,8.341-21.824,8.341-30.165,0c-8.341-8.341-8.341-21.824,0-30.165l106.667-106.667c8.341-8.341,21.824-8.341,30.165,0
+							L377.75,283.584C386.091,291.925,386.091,305.408,377.749,313.749z" 
+							fill="#6e4ef2"
+						/>
+					</g>
+				</g>
+			</svg>
+		</div>
 	)
 }

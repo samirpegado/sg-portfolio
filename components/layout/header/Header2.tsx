@@ -5,6 +5,7 @@ import Link from 'next/link'
 import OffCanvas from '../OffCanvas'
 import MobileMenu from '../MobileMenu'
 import { Icon } from '@/components/icons/Icon'
+import { handleNavClick } from '@/utils/navigation'
 
 export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCanvas, handleOffCanvas }:any) {
     const { t } = useLanguage();
@@ -40,19 +41,19 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 									<div className="collapse navbar-collapse" id="navbarSupportedContent">
 										<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 											<li className="nav-item">
-												<Link className="nav-link active" href="#about">{t('nav.about')}</Link>
+												<a className="nav-link active" href="#about" onClick={(e) => handleNavClick(e, '#about')}>{t('nav.about')}</a>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" href="#services">{t('nav.services')}</Link>
+												<a className="nav-link" href="#services" onClick={(e) => handleNavClick(e, '#services')}>{t('nav.services')}</a>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" href="#experience">{t('nav.resume')}</Link>
+												<a className="nav-link" href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>{t('nav.resume')}</a>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" href="#portfolio">{t('nav.portfolio')}</Link>
+												<a className="nav-link" href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')}>{t('nav.portfolio')}</a>
 											</li>
 											<li className="nav-item">
-												<Link className="nav-link" href="#contact">{t('nav.contact')}</Link>
+												<a className="nav-link" href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>{t('nav.contact')}</a>
 											</li>
 										</ul>
 									</div>
